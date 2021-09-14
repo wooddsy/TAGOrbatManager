@@ -9,8 +9,14 @@ namespace TAGOrbatManager.Models
     {
         public Guid Guid { get; set; }
         public string Name {  get; set; }
-        public string Role {  get; set; }
+        public string DiscordUsername { get; set; }
+        public string Role { get; set; }
         public DateTime JoinDate { get; set; }
 
+        public void setJoinDate()
+        {
+            JoinDate = DateTime.Now;
+        }
     }
+
 }
